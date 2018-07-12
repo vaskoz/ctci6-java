@@ -15,7 +15,12 @@ public class Q1A_Test {
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void badCharacter() {
+	public void badCharacterBelowRange() {
 		Q1A.areCharactersUnique("A");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void badCharacterAboveRange() {
+		Q1A.areCharactersUnique("~");
 	}
 }
