@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 public class Q2 {
 	public static boolean isPermutation(String one, String two) {
+		if (one.length() != two.length()) {
+			return false;
+		}
 		var letterCount = new HashMap<Character, Integer>();
 		for (var i = 0; i < one.length(); i++) {
 			var letter = one.charAt(i);

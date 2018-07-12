@@ -9,5 +9,7 @@ public class Q2_Test {
 		assertEquals(true, Q2.isPermutation("abc", "bca"));
 		assertEquals(true, Q2.isPermutation("abca", "bcaa"));
 		assertEquals(false, Q2.isPermutation("aa", "aac"));
+		assertEquals(false, Q2.isPermutation("a", "aa"));
+		assertEquals(false, Q2.isPermutation("abb", "aab"));
 	}
 }
