@@ -10,11 +10,11 @@ public class Q1A {
 			return false;
 		}
 
-		int bitset = 0;
+		var bitset = 0;
 
-		for (int i = 0; i < str.length(); i++) {
-			char letter = str.charAt(i);
-			int bitPosition = letter - 'a';
+		for (var i = 0; i < str.length(); i++) {
+			var letter = str.charAt(i);
+			var bitPosition = letter - 'a';
 			if (bitPosition < 0 || bitPosition >= 26) {
 				throw new IllegalArgumentException("Illegal letter found: " + letter);
 			}
