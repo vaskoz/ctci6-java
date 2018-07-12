@@ -11,6 +11,8 @@ plugins {
     id 'java-library'
 }
 
+apply plugin: 'jacoco'
+
 sourceCompatibility = 1.10
 
 dependencies {
