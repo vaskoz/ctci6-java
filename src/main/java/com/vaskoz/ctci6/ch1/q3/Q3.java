@@ -3,7 +3,7 @@ package com.vaskoz.ctci6.ch1.q3;
 
 public class Q3 {
 	public static void urlify(char[] url, int trueLength) {
-		int last = url.length - 1;
+		var last = url.length - 1;
 		trueLength--;
 		while (trueLength >= 0) {
 			if (url[trueLength] == ' ') {
