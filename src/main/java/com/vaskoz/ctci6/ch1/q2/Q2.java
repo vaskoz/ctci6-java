@@ -1,6 +1,7 @@
 package com.vaskoz.ctci6.ch1.q2;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Q2 {
 	public static boolean isPermutation(String one, String two) {
@@ -17,7 +18,7 @@ public class Q2 {
 		for (var i = 0; i < two.length(); i++) {
 			var letter = two.charAt(i);
 			var count = letterCount.get(letter);
-			if (count == null) {
+			if (Objects.isNull(count)) {
 				return false;
 			} else if (count == 1) {
 				letterCount.remove(letter);

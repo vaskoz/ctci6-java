@@ -1,8 +1,11 @@
 package com.vaskoz.ctci6.ch1.q6;
 
+import java.util.Objects;
+
 public class Q6 {
 	public static String compress(String input) {
-		if (input == null || input.length() == 0) {
+		input = Objects.requireNonNullElse(input, "");
+		if (input.isEmpty()) {
 			return "";
 		}
 		var sb = new StringBuilder(input.length());
