@@ -13,7 +13,11 @@ plugins {
 
 apply plugin: 'jacoco'
 
-sourceCompatibility = 1.10
+sourceCompatibility = 1.11
+
+jacoco {
+    toolVersion = "0.8.2"
+}
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
